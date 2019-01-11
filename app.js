@@ -7,12 +7,13 @@ const server    = http.createServer(app);
 const LISTEN_PORT = 8080;
 
 //middleware This set out base html to emerge from the publicm folder
-app.use(express.static(__dirname + '/pubplic'));
+app.use(express.static(__dirname + '/public'));
 
 //set a route
 app.get('/', function(req, res){
     res.sendFile(__dirname + 'public/index.html');
 });
+
 
 //finally, start server
 server.listen(LISTEN_PORT);
