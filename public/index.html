@@ -2,6 +2,7 @@
     <head>
         <script src="/js/aframe-v0.8.2.min.js"></script>
         <script src="/js/spherical-env-map.js"></script>
+        <script src="/js/test_component.js"></script>
     </head>
     <body>
     </body>
@@ -43,6 +44,9 @@
                         material="sphere:flat; src:#skymap; side:back;"
                         >
             </a-entity>
+
+            <a-entity hello-friend="message: This is a public anoucment test. If you did not get it you may die :( "></a-entity>
+
         </a-scene>
     </body>
 </html>
